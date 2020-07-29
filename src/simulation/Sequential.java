@@ -83,6 +83,5 @@ public class Sequential extends SimulationBase {
             simulationEndedProperty.set(true);
             this.plotData();
         }
-
     }
 }

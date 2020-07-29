@@ -19,6 +19,9 @@ public class ListDataCollection extends ArrayList<DataCollection> {
             chartController.showStage();
         }
     }
+    public void plotUData(){
+
+    }
     public void addData(DataCollection data, DataCollection uData){
         this.add(data);
         this.add(uData);
