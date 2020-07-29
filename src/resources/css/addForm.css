@@ -1,0 +1,8 @@
+
+.pane {
+    -fx-pref-height: 30px;
+    -fx-pref-width: 200px;
+    -fx-max-height: 30px;
+    -fx-max-width: 200px;
+}
+.label {}

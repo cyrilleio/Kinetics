@@ -1,0 +1,27 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" build-on-make="true" name="Kinetics">
+    <output-path>$PROJECT_DIR$/out/artifacts/Kinetics</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="sample.Main" />
+        <option name="description" value="" />
+        <option name="height" value="600" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="nativeBundle" value="rpm" />
+        <option name="title" value="Test" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+        <option name="width" value="900" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="Kinetics.jar">
+        <element id="module-output" name="Kinetics" />
+      </element>
+      <element id="module-output" name="Kinetics" />
+      <element id="module-source" name="Kinetics" />
+      <element id="file-copy" path="$MAVEN_REPOSITORY$/org/jetbrains/annotations/19.0.0/annotations-19.0.0.jar" />
+      <element id="library" level="project" name="commons-math3-3.6.1" />
+    </root>
+  </artifact>
+</component>

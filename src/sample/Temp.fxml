@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TilePane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane>
+               <children>
+                  <Pane layoutX="6.0" layoutY="1.0" prefHeight="399.0" prefWidth="298.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <ListView fx:id="simulation" layoutX="3.0" layoutY="7.0" prefHeight="360.0" prefWidth="283.0" style="-fx-font-family: Lato; -fx-font-size: 10;" />
+                        <Button fx:id="remove" cancelButton="true" contentDisplay="CENTER" layoutX="116.0" layoutY="371.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="50.0" text="Remove">
+                           <font>
+                              <Font name="Lato Regular" size="10.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Label fx:id="hint" alignment="CENTER" layoutX="7.0" layoutY="179.0" prefHeight="17.0" prefWidth="276.0" style="-fx-background-color: #fff;" text="To fill for simulation" textAlignment="CENTER" textFill="#9f9f9f">
+                           <font>
+                              <Font name="Lato Regular" size="10.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="304.0" prefHeight="400.0" prefWidth="292.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <Button fx:id="add" cancelButton="true" layoutX="129.0" layoutY="371.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="50.0" text="Add">
+                           <font>
+                              <Font name="Lato Regular" size="10.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <ListView fx:id="experiments" layoutX="8.0" layoutY="8.0" prefHeight="135.0" prefWidth="276.0" style="-fx-font-family: Lato; -fx-font-size: 10; -fx-font-weight: 700;" />
+                        <VBox layoutX="24.0" layoutY="200.0" prefHeight="80.0" prefWidth="82.0">
+                           <children>
+                              <Label text="Speed">
+                                 <font>
+                                    <Font name="Lato Regular" size="10.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="speed" prefHeight="27.0" prefWidth="81.0" promptText="cm/s" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="169.0" layoutY="200.0" prefHeight="86.0" prefWidth="82.0">
+                           <children>
+                              <Label text="Acc">
+                                 <font>
+                                    <Font name="Lato Regular" size="10.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="acc" promptText="m/s-2" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="24.0" layoutY="256.0" prefHeight="86.0" prefWidth="82.0">
+                           <children>
+                              <Label text="L_car">
+                                 <font>
+                                    <Font name="Lato Regular" size="10.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="lCarr" prefHeight="27.0" prefWidth="83.0" promptText="cm" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="169.0" layoutY="257.0" prefHeight="80.0" prefWidth="82.0">
+                           <children>
+                              <Label text="Space">
+                                 <font>
+                                    <Font name="Lato Regular" size="10.0" />
+                                 </font>
+                              </Label>
+                              <TextField promptText="cm" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </children>
+      </TilePane>
+   </children>
+</HBox>
